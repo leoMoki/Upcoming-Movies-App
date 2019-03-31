@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:id="@+id/prgMovies"/>
+
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		   	
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Search your movies"
+			android:id="@+id/searchMovie"/>
+
+		<ListView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:divider="@android:color/transparent"
+			android:dividerHeight="10.0sp"
+			android:id="@+id/lvMovies"/>
+		
+
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/previous"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/btnPrevious"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/next"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/btnNext"/>
+
+			<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/page"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/tvPage" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+</RelativeLayout>
